@@ -1,0 +1,16 @@
+@import "./header";
+@import './variables';
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+.contact{
+    background-color: $textcolor;
+    @include atcenter(row);
+}
+.last{
+    //Inheritance
+    @extend header;
+    //Basic Calculation  { + - / *}
+    width: 100%-50%;
+}

@@ -1,0 +1,59 @@
+header, .last {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background: aqua;
+  background-color: #5fc770;
+  color: #a4cec1;
+}
+
+header button, .last button {
+  background-color: #eb0f7d;
+}
+
+header button:hover, .last button:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: #b98de6;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+}
+
+.contact {
+  background-color: #a4cec1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.last {
+  width: 50%;
+}
+/*# sourceMappingURL=styles.css.map */

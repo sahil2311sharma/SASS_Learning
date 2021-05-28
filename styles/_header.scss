@@ -1,0 +1,30 @@
+// " mixin " is used same as variables but the only difference is in mixin we can put n number of variables 
+@mixin atcenter($direction) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// If we want to call any sass file (or) import any sass file at a certain file we use import   we use    "   import   "
+@import './variables';
+
+header{
+    @include atcenter(column);
+    height: 100vh;
+    background: aqua;
+    background-color: $primarybutton;
+    color: $textcolor;
+    
+    // This is the method of nesting one into another 
+    button{
+        background-color: $maincolor;
+
+        //If we want to perform more operations on a particular block like hover after before active we use   "  &  "
+        &:hover{
+            transition: 2s;
+            background-color: rgb(185, 141, 230);
+        }
+    }
+}
